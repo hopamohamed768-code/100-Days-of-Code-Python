@@ -4,13 +4,14 @@ print(art.logo)
 def blind_auction():
     owners = {}
     add_bid = True
+
     while add_bid:
         name_of_owners = input("What is your name?\n")
         owners[name_of_owners] = int(input("What is your bid?\n"))
         owners_bid = input("Are there any other bidders? Type 'yes or 'no'.").lower()
 
         if owners_bid == "yes":
-            print("\n" * 20)
+            print("\n" * 100)
         else:
             add_bid = False
 
